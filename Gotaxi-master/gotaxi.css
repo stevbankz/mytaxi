@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+nav{
+    background-color: whitesmoke;
+    display: block;  
+    align-items: right;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    padding-left: 80px;
+    padding-top: 0px;
+
+}
+.logo{
+    width: 50px ;    
+}
+
+nav ul{
+    list-style: none;
+    display: inline-flex;
+    padding-left: 300px;
+}
+nav ul li{
+    margin: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+}
+
+.gotaxi-image{
+    color:white;
+    padding: 140px;
+    text-align: center;
+    background-image: url("./asset1.jpg");
+    background-size: 100%;
+    background-position: center;
+    height: 600px;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+.all{
+    border: 100px;
+    background-color: lightcyan;
+    height: 400px;
+}
+.taxi{
+    display: flex;
+    padding: 25px;
+    height: 250px;
+}
+.intro{
+    top: 50px;
+    columns: 700px;
+}
+.words{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+
+}
+.know{
+    padding: 20px;
+    height: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    
+}
+.question{
+    color: skyblue;
+    font-size: 30px;
+    text-align: center;
+}
+.registration{
+    text-align: center;
+
+}
+.signup{
+    text-align: center;
+
+}
+.container{
+    margin: 30px;
+    /* background-image: url(banner.png); */
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+
+}
+@media screen and (min-width:481px) {
+    .grid{
+        display: block;
+        width: 30px;
+        height: 50px;
+        padding: 14px;
+    }
+    
+}
+.grid{
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 7px grey;
+    padding: 20px;
+    background-color: #fff;
+    height: 300px;
+}
+.grid img{
+    width: 150px;
+}
+/* .allu{
+    background-color: blue;
+    height: 300px;
+    margin-top: -150px;   */
+/* } */
+.ola{
+    background-color: blueviolet;
+    height: 25px;
+    top: 12px;
+}
+.them{
+    background-color: #0049AC;
+    width: 100%;
+    height:900px;
+    margin-top: 200px;
+    padding: 100px;
+    /* z-index: -1; */
+    display: flex;
+}
+.them ul li{
+    list-style: none;
+}
+.them h3{
+    text-align: right;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.them p{
+    text-align: right;
+    padding-left: 70px;
+    width: 390px;
+    margin-top: 20px;
+    color: white;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-size: 25px;
+}
+.banner{
+    background-image: url(banner.png);
+    background-size: 500px;
+    z-index: -2;
+    width:100%;
+    height: 350px;
+    position: absolute;
+    top: 1500px;
+    background-repeat: repeat-x;
+}
+.space{
+    display: inline;
+    padding: 200px;
+    padding-left: 200px;
+}
+.space1{ 
+    margin-top: -20px;
+    margin-right:200px ;
+}
+.pick-up{
+    width: 400px;
+    text-align: justify;
+    padding-left: 80px;
+    font-size: 19px;
+    color: #0DCEF4;
+}
+.handy{
+    margin-left: 100px;
+    padding: 50px;
+}
+.ally{
+    width: 100%;
+    height: 50%;
+
+}
+.way{
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 0px;
+}
+.one{
+    border: 4px dashed white;
+    position: relative;
+    top: 120px;
+    width: 1600px;
+    background-color: gray;
+}
+.lorry{
+
+    width: 200px;
+    height: 150px;
+    /* position: absolute; */
+    top: 500%;
+    left: 100%;
+    animation-name: cars;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;      
+    animation-direction: reverse;
+}
+.truck{
+    /* position: absolute; */
+    width: 30%;
+    top: 500px;
+    left: 100%;
+    animation-name: cars;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-direction: normal;
+}
+.bike{
+    /* position: absolute; */
+    width: 200px;
+    top: 50px;
+    left: 100%;
+    animation-name: cars;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    animation-direction: normal;
+}
+@keyframes cars{
+    0%{
+        transform: translateX(100px);
+    }
+     100%{
+        transform: translateX(2000px);
+    }
+}   
+.hero{
+    border: 100px;
+    background-color: #21222E;
+    width: 1800px;
+    height: 600px;
+}
+/* .imat{
+    padding: 30px;
+    width: 20px;
+    height: 10px;
+} */
+#CHUKS{
+    margin-left: 1000px;
+    margin-right: 1000px;
+    transform: translateX(60px);
+    padding: 140px;
+}
